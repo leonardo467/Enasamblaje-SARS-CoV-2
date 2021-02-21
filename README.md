@@ -1,6 +1,6 @@
 # Enasamblaje-SARS-CoV-2
 
-############################# notas ############################################
+**Notas**
 
 - Este script está diseñados para ensamblar secuencias crudas paired-end de SARS-CovV-2 paired-end (Secuenciadas con tecnología Illumina) 
 
@@ -8,7 +8,7 @@
 
 - El script asume que tienes un procesador de 4 núcleos. Puedes modificar este valor entrando al archivo "control_calidad.sh" y cambiando el valor de la variable 
 
-################# Instrucciones de uso del script ###############################
+**Instrucciones de uso del script **
 
  1. Copiar tus secuencias de interés (paired-end) en una carpeta llamada "secuencias". Es importante que el nombre sea "secuencias" para que pueda correr el código. 
 
