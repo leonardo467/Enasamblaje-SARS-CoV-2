@@ -25,8 +25,8 @@ https://drive.google.com/drive/folders/1penLZEdz3ZoNTxovWxAXTaKGomiq0xt7?usp=sha
  3. Ejecutar el programa de la siguiente manera: 
  
  	> ./control_calidad.sh 
-
-################# Programas que necesitas instalar ##############################
+ 
+**Programas que necesitas instalar**
 
 La gran mayoría de ellos ya vienen en la carpeta "Programs". Sin embargo, hay algunos que necesitas instalar para que pueda funcionar el script: 
 
@@ -34,6 +34,6 @@ La gran mayoría de ellos ya vienen en la carpeta "Programs". Sin embargo, hay a
 
 - libncurses5 --> Código de intalación --> sudo apt-get install libncurses5
 
-*Cualquier consulta/sugerencia sobre este script, pueden comunicarse al siguiente correo: 
+**Cualquier consulta/sugerencia sobre este script, pueden comunicarse al siguiente correo:** 
 
-       > Luis González --> luis.gonzalez.v@upch.pe
+Luis González --> luis.gonzalez.v@upch.pe
