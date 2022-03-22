@@ -1,16 +1,10 @@
 **Enasamblaje-SARS-CoV-2**
 
-**Link de Descarga de Programas + Manual de instrucciones** 
-
-https://drive.google.com/drive/folders/1penLZEdz3ZoNTxovWxAXTaKGomiq0xt7?usp=sharing
-
-**Notas**
-
 - Este script está diseñados para ensamblar secuencias crudas paired-end de SARS-CovV-2 paired-end (Secuenciadas con tecnología Illumina) 
 
 - Necesitas instalar (o verificar que tienes instalado) unos programas antes de comenzar. La lista de programas está al final de este texto. 
 
-- El script asume que tienes un procesador de 4 núcleos. Puedes modificar este valor entrando al archivo "control_calidad.sh" y cambiando el valor de la variable 
+- El script asume que tienes un procesador de 4 núcleos. Puedes modificar este valor entrando al archivo "control_calidad.sh" y cambiando el valor de la variable "threads". 
 
 **Instrucciones de uso del script**
 
@@ -34,6 +28,8 @@ La gran mayoría de ellos ya vienen en la carpeta "Programs". Sin embargo, hay a
 
 - libncurses5 --> Código de intalación --> sudo apt-get install libncurses5
 
-**Cualquier consulta/sugerencia sobre este script, pueden comunicarse al siguiente correo:** 
+**Cualquier consulta/sugerencia sobre este script, pueden comunicarse a los siguientes correos:** 
 
-Luis González --> luis.gonzalez.v@upch.pe
+Luis González   --> luis.gonzalez.v@upch.pe
+
+Diego Cuicapuza --> diego.cuicapuza@upch.pe
