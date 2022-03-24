@@ -19,6 +19,7 @@ Instalación
 > git clone https://github.com/leonardo467/Enasamblaje-SARS-CoV-2.git
 
 > conda env create -n covid -f environment_covid.yaml
+
 > rm environment_covid.yaml
 
 3. Haz ejecutable el script
