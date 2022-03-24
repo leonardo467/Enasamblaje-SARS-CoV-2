@@ -1,35 +1,48 @@
-**Enasamblaje-SARS-CoV-2**
+Ensamblaje de secuencias SARS-CoV-2
 
-- Este script está diseñados para ensamblar secuencias crudas paired-end de SARS-CovV-2 paired-end (Secuenciadas con tecnología Illumina) 
+- Este script está diseñados para ensamblar secuencias crudas paired-end de SARS-CovV-2 secuenciadas con tecnología Illumina.
 
-- Necesitas instalar (o verificar que tienes instalado) unos programas antes de comenzar. La lista de programas está al final de este texto. 
+- Necesitas crear un ambiente en conda, donde se instalarán todos los programas necesarios para ensamblar genomas de SARS-CoV-2. 
 
-- El script asume que tienes un procesador de 4 núcleos. Puedes modificar este valor entrando al archivo "control_calidad.sh" y cambiando el valor de la variable "threads". 
+- El script asume que tienes un procesador de 4 núcleos. Puedes modificar este valor entrando al archivo "control_calidad.sh" y cambiando el valor de la variable "threads". También asume que usaste adaptadores truseq para tu secuenciamiento. Puedes cambiar estos adaptadores por los de tu interés agregándolos en la carpeta "Programs" y escribiendo su nombre exacto en la variable "adapters"
 
-**Instrucciones de uso del script**
+Instalación
 
- 1. Copiar tus secuencias de interés (paired-end) en una carpeta llamada "secuencias". Es importante que el nombre sea "secuencias" para que pueda correr el código. 
+1. Instalación de conda (en caso no lo tengas instalado)
 
- 2. Activar la carpeta de programas para que todos los archivos sean ejecutables (esto solo se hace la primera vez que se usa el script). También es necesario hacer ejecutable el programa "control_calidad.sh" (Esto también se hace solo una vez en la vida). Este se hace de la siguiente manera: 
+> wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+> chmod +x Miniconda3-latest-Linux-x86_64.sh
+> ./Miniconda3-latest-Linux-x86_64.sh
 
-	> chmod -R +x Programs/
-	
-	> chmod +x control_calidad.sh
-	
- 3. Ejecutar el programa de la siguiente manera: 
- 
- 	> ./control_calidad.sh 
- 
-**Programas que necesitas instalar**
+2. Instalación del programa
 
-La gran mayoría de ellos ya vienen en la carpeta "Programs". Sin embargo, hay algunos que necesitas instalar para que pueda funcionar el script: 
+> git clone https://github.com/leonardo467/Enasamblaje-SARS-CoV-2.git
+> conda env create -n covid -f environment_covid.yaml
+> rm environment_covid.yaml
 
-- Java        --> Código de instalación --> sudo apt install openjdk-14-jre-headless 
+3. Haz ejecutable el script
 
-- libncurses5 --> Código de intalación --> sudo apt-get install libncurses5
+> chmod +x control_calidad.sh
 
-**Cualquier consulta/sugerencia sobre este script, pueden comunicarse a los siguientes correos:** 
+Instrucciones
 
-Luis González   --> luis.gonzalez.v@upch.pe
+1. Copiar tus secuencias de interés (paired-end) en una carpeta llamada "secuencias". Es importante que el nombre sea "secuencias" para que pueda correr el código. Puedes descargar esta carpeta de secuencias de prueba para probar el script:
+
+https://drive.google.com/drive/folders/1-8ZCpA83cyRR6ITGU8HVLy1itwheFkPr?usp=sharing
+
+2. Activa el ambiente conda:
+
+> conda activate covid
+
+4. Ejecuta el script: 
+
+> ./control_calidad.sh
+
+*Mayor información y tutorial de cómo correr este programa se encuentra en el manual. 
+
+Cualquier consulta/sugerencia sobre este script, pueden comunicarse a los siguientes correos:
+
+Luis González --> luis.gonzalez.v@upch.pe
 
 Diego Cuicapuza --> diego.cuicapuza@upch.pe
+
